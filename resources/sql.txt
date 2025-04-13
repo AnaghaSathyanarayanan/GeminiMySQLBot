@@ -1,0 +1,31 @@
+CREATE DATABASE university;
+USE university;
+
+CREATE TABLE students (
+    student_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    dob DATE,
+    email VARCHAR(100),
+    course_id INT
+);
+
+CREATE TABLE courses (
+    course_id INT AUTO_INCREMENT PRIMARY KEY,
+    course_name VARCHAR(100),
+    course_description TEXT
+);
+
+INSERT INTO courses (course_name, course_description)
+VALUES 
+('Data Science 101', 'Introduction to Data Science and Analytics'),
+('Cloud Computing Basics', 'Overview of Cloud Services and Platforms'),
+('Advanced Python Programming', 'In-depth exploration of Python for Data Science'),
+('SQL for Data Analysis', 'Database management and querying for data analysis');
+
+INSERT INTO students (first_name, last_name, dob, email, course_id)
+VALUES
+('Anaga', 'Manjunath', '2002-10-17', 'anaga.manjunath@example.com', 1),
+('John', 'Doe', '2000-05-14', 'john.doe@example.com', 2),
+('Jane', 'Smith', '2001-08-23', 'jane.smith@example.com', 3),
+('Emily', 'Johnson', '1999-12-02', 'emily.johnson@example.com', 4);
