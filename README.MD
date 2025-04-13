@@ -134,6 +134,3 @@ MIT License
 
 Created by **AnaghaSathyanarayanan**  
 Powered by **Gemini API**, **MySQL**, and **Streamlit**
-```
-
-
